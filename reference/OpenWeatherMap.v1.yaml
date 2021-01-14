@@ -385,8 +385,6 @@ paths:
           in: query
           name: mode
           description: '**Mode*. *Example: html. Determines the format of the response. Possible values are `json`, `xml`, and `html`. If the mode parameter is empty, the format is `json` by default.'
-      security:
-        - API Key - 1: []
     parameters: []
 components:
   schemas:
@@ -432,7 +430,7 @@ components:
         - email
         - emailVerified
   securitySchemes:
-    API Key - 1:
+    'API Key ':
       name: API Key
       type: apiKey
       in: query
